@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="87367f3c-0eb5-4acf-b77e-7abfbdf8ad06" name="Default" comment="" />
-    <list default="true" id="faf3bf4d-ce4a-433f-a178-eef148cdb447" name="inteli commit (cherry picked from commit c45a5b3)" comment="inteli commit&#10;(cherry picked from commit c45a5b3)">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/test_project/Test.java" afterPath="$PROJECT_DIR$/src/com/test/test_project/Test.java" />
+    <list default="true" id="faf3bf4d-ce4a-433f-a178-eef148cdb447" name="inteli commit (cherry picked from commit c45a5b3)" comment="local commit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Test project.iws" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="Test.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/test/test_project/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41262135" vertical-offset="0" max-vertical-offset="618">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.44012946" vertical-offset="0" max-vertical-offset="618">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
                 <element signature="e#260#261#0" expanded="true" />
                 <element signature="e#322#323#0" expanded="true" />
@@ -400,7 +399,7 @@
       <workItem from="1396103542975" duration="4764000" />
       <workItem from="1396111608146" duration="2223000" />
       <workItem from="1396117524238" duration="649000" />
-      <workItem from="1396119032399" duration="732000" />
+      <workItem from="1396119032399" duration="798000" />
     </task>
     <task id="LOCAL-00001" summary="inteli commit">
       <created>1396117733196</created>
@@ -414,11 +413,15 @@
       <created>1396119575083</created>
       <updated>1396119575083</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="local commit">
+      <created>1396119778271</created>
+      <updated>1396119778271</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8368000" />
+    <option name="totallyTimeSpent" value="8434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1634" height="1066" extended-state="6" />
@@ -472,7 +475,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="inteli commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="inteli commit" />
+    <MESSAGE value="local commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="local commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -525,8 +529,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/test_project/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41262135" vertical-offset="0" max-vertical-offset="618">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.44012946" vertical-offset="0" max-vertical-offset="618">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
             <element signature="e#260#261#0" expanded="true" />
             <element signature="e#322#323#0" expanded="true" />
