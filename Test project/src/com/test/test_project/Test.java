@@ -12,4 +12,5 @@ public class Test {
     public void local_funcion(){
         System.out.println("pisze cos tylko lokalnie");
     }
+    //some change to pull
 }
