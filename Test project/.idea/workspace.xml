@@ -2,8 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="87367f3c-0eb5-4acf-b77e-7abfbdf8ad06" name="Default" comment="" />
-    <list default="true" id="faf3bf4d-ce4a-433f-a178-eef148cdb447" name="inteli commit (cherry picked from commit c45a5b3)" comment="local commit">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="faf3bf4d-ce4a-433f-a178-eef148cdb447" name="inteli commit (cherry picked from commit c45a5b3)" comment="from local commit">
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\.idea\libraries\Spring_4_0_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\Test project.iml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\commons-logging-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-aop-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-aspects-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-beans-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-context-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-context-support-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-core-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-expression-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-instrument-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-instrument-tomcat-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-jdbc-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-jms-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-messaging-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-orm-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-oxm-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-test-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\lib\spring-tx-4.0.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\out\production\Test project\com\test\test_project\Test.class" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\out\production\Test project\spring-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\src\com\test\test_project\Test.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\Archiwum\Java Projects\mkoi_projekt\Test project\src\spring-config.xml" afterPath="" />
     </list>
     <ignored path="Test project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,21 +57,7 @@
     <favorites_list name="Test project" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Test.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/test/test_project/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44012946" vertical-offset="0" max-vertical-offset="618">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding>
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -100,28 +118,11 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -141,7 +142,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mkoi_projekt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Application.Test">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -399,7 +401,9 @@
       <workItem from="1396103542975" duration="4764000" />
       <workItem from="1396111608146" duration="2223000" />
       <workItem from="1396117524238" duration="649000" />
-      <workItem from="1396119032399" duration="798000" />
+      <workItem from="1396119032399" duration="836000" />
+      <workItem from="1396188231399" duration="404000" />
+      <workItem from="1396188763172" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="inteli commit">
       <created>1396117733196</created>
@@ -417,15 +421,19 @@
       <created>1396119778271</created>
       <updated>1396119778271</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="from local commit">
+      <created>1396119841184</created>
+      <updated>1396119841184</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8434000" />
+    <option name="totallyTimeSpent" value="8901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1634" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -440,19 +448,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18788628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18788628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -476,7 +484,8 @@
     </option>
     <MESSAGE value="inteli commit" />
     <MESSAGE value="local commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="local commit" />
+    <MESSAGE value="from local commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="from local commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -488,12 +497,25 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/test/test_project/Test.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="357">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/test_project/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/test_project/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="357">
           <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -501,10 +523,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -512,10 +531,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="289">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -523,18 +539,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07280514" vertical-offset="0" max-vertical-offset="934">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/test_project/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44012946" vertical-offset="0" max-vertical-offset="618">
+        <state vertical-scroll-proportion="0.38511327" vertical-offset="0" max-vertical-offset="618">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
