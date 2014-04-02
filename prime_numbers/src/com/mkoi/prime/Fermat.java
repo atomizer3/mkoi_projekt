@@ -1,5 +1,4 @@
 package com.mkoi.prime;
-import java.util.Scanner;
 /**
  * Created by Tomek on 2014-03-30.
  */
@@ -24,20 +23,23 @@ public class Fermat{
             }
         }
         //Fermat-method check for values above 1009, MAX_ATTEMPT times
-        if (p > 1009){
+        if (p > 1009)
+        {
             for (int i = 0; i < MAX_ATTEMPT; i++){
                 a = math.random_from_range(2,p - 1);
-                if ( math.GCD(p,a) !=1 || math.power_modulo(a,p - 1,p) != 1){
+                if ( math.GCD(p,a) !=1 || math.power_modulo(a,p - 1,p) != 1)
+                {
                     return "FALSE";
                 }
             }
-        } else {
+        } else
+        {
             return "FALSE";
         }
         return "TRUE";
     }
-    public static void main(String[] args) {
-        System.out.println(check_prime(2998,10));
-    }
+//    public static void main(String[] args) {
+//        System.out.println(check_prime(2999,10));
+//    }
 
 }
