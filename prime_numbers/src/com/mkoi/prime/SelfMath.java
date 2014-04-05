@@ -1,5 +1,8 @@
 package com.mkoi.prime;
 
+import java.math.BigInteger;
+import java.util.Random;
+
 /**
  * Created by Tomek on 2014-03-30.
  */
@@ -35,8 +38,12 @@ public class SelfMath {
         }
         return ret;
     }
-    public long random_from_range(long a, long b){//including a, excluding b
-        double ret = Math.random() * (b - a) + a;
-        return (long)ret;
+    public BigInteger random_from_range(int a, BigInteger b){//including a, excluding b
+        Random rand = new Random();
+        BigInteger result;
+        do {
+            result = new BigInteger(b.bitLength(), rand);
+        } while(result.compareTo(b) >= 0 || result.compareTo(BigInteger.valueOf(a)) <  0);
+        return result;
     }
 }
