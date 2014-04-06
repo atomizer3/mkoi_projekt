@@ -2,36 +2,42 @@ package com.mkoi.prime;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.math.BigInteger;
 import java.text.ParseException;
+import java.util.Date;
 import javax.swing.*;
 
 /**
  * Created by Tomek on 2014-03-31.
  */
-public class MainApi {
-    private JTextArea textArea;
-    private JButton cancelButton;
-    private JButton nextButton;
-    private JTextField textField;
-    private JRadioButton radioButton1;
-    private JRadioButton radioButton2;
+public class MainApi{
+    public JTextArea textArea;
+    public JButton cancelButton;
+    public JButton nextButton;
+    public JTextField textField;
+    public JRadioButton radioButton1;
+    public JRadioButton radioButton2;
+
+    protected static Fermat fermat;
+
 
     JSpinner spinner;
 
     private void initButtons(){
-        cancelButton = new JButton("Cancel");
-        nextButton = new JButton("Next");
+        cancelButton = new JButton("Clear");
+        nextButton = new JButton("Start");
         nextButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("ala ma kota na next");
+                mainButtonAction();
+
             }
         });
         cancelButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                textArea.setText(textArea.getText()+"ala nie ma kota na cancel\n");
-                System.out.println("ala nie ma kota na cancel");
+                textArea.setText("");
+                textField.setText("0");
             }
         });
     }
@@ -45,6 +51,12 @@ public class MainApi {
 
     private void initApi(){
         textField = new JTextField();
+        spinner = new JSpinner();
+        JSpinner.NumberEditor editor = new JSpinner.NumberEditor(spinner);
+        editor.getFormat().setGroupingUsed(false);
+        spinner.setEditor(editor);
+        textField = ((JSpinner.DefaultEditor)spinner.getEditor()).getTextField();
+//        editor.setEditor(new JSpinner.NumberEditor(spinner,"#"));
         radioButton1 = new JRadioButton("Fermat");
         radioButton2 = new JRadioButton("Solovay-Strassen");
         ButtonGroup buttonGroup = new ButtonGroup();
@@ -53,7 +65,7 @@ public class MainApi {
 
     }
 
-    private void initView(){
+    protected void initView(){
         JFrame frame = new JFrame("Prime numbers");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -73,6 +85,7 @@ public class MainApi {
         buttonPane.setBorder(BorderFactory.createEmptyBorder(0, 10, 10, 10));
         buttonPane.add(Box.createHorizontalGlue());
         buttonPane.add(textField);
+//        buttonPane.add(spinner);
         buttonPane.add(radioPane);
         buttonPane.add(cancelButton);
         buttonPane.add(Box.createRigidArea(new Dimension(10, 0)));
@@ -98,12 +111,26 @@ public class MainApi {
     }
 
     public static void main(String[] args) {
-        MainApi mainapi = new MainApi();
-        mainapi.initView();
+        fermat = new Fermat();
+        fermat.initView();
     }
-    public int readValue() {
-        return 1;
+    public BigInteger readValue(){
+        return new BigInteger(textField.getText().replace(" ",""));
     }
-//    MainCards = new JPanel(new CardLayout());
+    public void mainButtonAction(){
+        if (!textField.getText().equals(null) && !textField.getText().equals("")){
+            if (radioButton1.isSelected()){
+                textArea.setText("");
+                fermat.check_prime(readValue(),10);
+            } else if (radioButton2.isSelected()){
+                textArea.setText("");
+                //solovay-strassen.check_prime();
+            } else {
+                textArea.setText("Select algorithm to validate prime number\n");
+            }
+        } else {
+            textArea.setText("Provide number to validate\n");
+        }
+    }
 
 }
