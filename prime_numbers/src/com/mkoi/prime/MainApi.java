@@ -1,16 +1,16 @@
 package com.mkoi.prime;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.math.BigInteger;
-import java.text.ParseException;
-import java.util.Date;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.math.BigInteger;
+import java.util.Random;
 
 /**
  * Created by Tomek on 2014-03-31.
  */
-public class MainApi{
+public class MainApi {
     public JTextArea textArea;
     public JButton cancelButton;
     public JButton nextButton;
@@ -18,12 +18,24 @@ public class MainApi{
     public JRadioButton radioButton1;
     public JRadioButton radioButton2;
 
-    protected static Fermat fermat;
-
+    protected final FermatPrimalityTest fermat;
+    protected final SolovayStrassenPrimalityTest solovayStrassenPrimalityTest;
+    protected final MkoiLogger logger;
+    protected final IRandomNumberService randomNumberService;
 
     JSpinner spinner;
 
-    private void initButtons(){
+    public MainApi() {
+        initView();
+
+        randomNumberService = new RandomNumberService(new Random(3));
+        logger = new MkoiLogger(this.textArea);
+
+        fermat = new FermatPrimalityTest(logger, randomNumberService);
+        solovayStrassenPrimalityTest = new SolovayStrassenPrimalityTest(logger, randomNumberService);
+    }
+
+    private void initButtons() {
         cancelButton = new JButton("Clear");
         nextButton = new JButton("Start");
         nextButton.addActionListener(new ActionListener() {
@@ -42,20 +54,20 @@ public class MainApi{
         });
     }
 
-    private void initTextareas(){
+    private void initTextareas() {
         textArea = new JTextArea();
-        textArea.setMinimumSize(new Dimension(200,100));
+        textArea.setMinimumSize(new Dimension(200, 100));
         textArea.setEnabled(false);
         textArea.setToolTipText("Insert number-value here");
     }
 
-    private void initApi(){
+    private void initApi() {
         textField = new JTextField();
         spinner = new JSpinner();
         JSpinner.NumberEditor editor = new JSpinner.NumberEditor(spinner);
         editor.getFormat().setGroupingUsed(false);
         spinner.setEditor(editor);
-        textField = ((JSpinner.DefaultEditor)spinner.getEditor()).getTextField();
+        textField = ((JSpinner.DefaultEditor) spinner.getEditor()).getTextField();
 //        editor.setEditor(new JSpinner.NumberEditor(spinner,"#"));
         radioButton1 = new JRadioButton("Fermat");
         radioButton2 = new JRadioButton("Solovay-Strassen");
@@ -65,7 +77,7 @@ public class MainApi{
 
     }
 
-    protected void initView(){
+    protected void initView() {
         JFrame frame = new JFrame("Prime numbers");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -79,7 +91,7 @@ public class MainApi{
 
         radioPane.add(radioButton1);
         radioPane.add(radioButton2);
-        radioPane.setLayout(new BoxLayout(radioPane,BoxLayout.Y_AXIS));
+        radioPane.setLayout(new BoxLayout(radioPane, BoxLayout.Y_AXIS));
 
         buttonPane.setLayout(new BoxLayout(buttonPane, BoxLayout.LINE_AXIS));
         buttonPane.setBorder(BorderFactory.createEmptyBorder(0, 10, 10, 10));
@@ -91,7 +103,7 @@ public class MainApi{
         buttonPane.add(Box.createRigidArea(new Dimension(10, 0)));
         buttonPane.add(nextButton);
 
-        scrollPane.setPreferredSize(new Dimension(400,150));
+        scrollPane.setPreferredSize(new Dimension(400, 150));
         scrollPane.setAlignmentX(Component.LEFT_ALIGNMENT);
 
         Container contentPane = frame.getContentPane();
@@ -103,28 +115,26 @@ public class MainApi{
         frame.setVisible(true);
     }
 
-    private void initBackground(){
+    private void initBackground() {
         //initliaize jspinner model here and orher radio buttons and whatever else
         //https://community.oracle.com/message/9339792?#9337792
         //http://stackoverflow.com/questions/1313390/is-there-any-way-to-accept-only-numeric-values-in-a-jtextfield
 
     }
 
-    public static void main(String[] args) {
-        fermat = new Fermat();
-        fermat.initView();
+    public BigInteger readValue() {
+        return new BigInteger(textField.getText().replace(" ", ""));
     }
-    public BigInteger readValue(){
-        return new BigInteger(textField.getText().replace(" ",""));
-    }
-    public void mainButtonAction(){
-        if (!textField.getText().equals(null) && !textField.getText().equals("")){
-            if (radioButton1.isSelected()){
+
+    public void mainButtonAction() {
+        if (!textField.getText().equals(null) && !textField.getText().equals("")) {
+            boolean result = false;
+            if (radioButton1.isSelected()) {
                 textArea.setText("");
-                fermat.check_prime(readValue(),10);
-            } else if (radioButton2.isSelected()){
+                result = fermat.probablyPrime(readValue(), 10);
+            } else if (radioButton2.isSelected()) {
                 textArea.setText("");
-                //solovay-strassen.check_prime();
+                result = solovayStrassenPrimalityTest.probablyPrime(readValue(), 10);
             } else {
                 textArea.setText("Select algorithm to validate prime number\n");
             }
@@ -132,5 +142,4 @@ public class MainApi{
             textArea.setText("Provide number to validate\n");
         }
     }
-
 }
