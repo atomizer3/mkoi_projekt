@@ -68,6 +68,13 @@ public class FermatPrimalityTest implements IPrimalityTest {
         return ret;
     }
 
+    /**
+     * Checks that number is probably prime.
+     * @param number the number to check.
+     * @param repeats the number of iterations of algorithm.
+     * @return false when algorithm found a proof that number is not prime
+     * true when is probable prime.
+     */
     @Override
     public boolean probablyPrime(BigInteger number, int repeats)  {
         System.out.println(number);

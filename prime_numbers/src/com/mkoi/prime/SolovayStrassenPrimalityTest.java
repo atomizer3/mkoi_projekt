@@ -5,16 +5,33 @@ import java.math.BigInteger;
 /**
  * Created by Tomasz Nowak on 2014-04-17.
  */
+
+/**
+ * Provides Solovay-Strassen primality test for big numbers.
+ */
 public class SolovayStrassenPrimalityTest implements IPrimalityTest{
 
     private final IRandomNumberService randomNumberService;
     private final ILogger logger;
 
+    /**
+     * Basic constructor with logger and random number generation service.
+     * @param logger
+     * @param randomNumberService
+     */
     public SolovayStrassenPrimalityTest(ILogger logger, IRandomNumberService randomNumberService) {
         this.logger = logger;
         this.randomNumberService = randomNumberService;
     }
 
+    /**
+     * Checks that number is probably prime.
+     * @param number the number to check.
+     * @param repeats the number of iterations of algorithm.
+     * @return false when algorithm found a proof that number is not prime
+     * true when is probable prime.
+     */
+    @Override
     public boolean probablyPrime(BigInteger number, int repeats) {
         if( number.equals(new BigInteger("2") ))
             return true;

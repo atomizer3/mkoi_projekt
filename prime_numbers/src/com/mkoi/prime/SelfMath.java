@@ -4,7 +4,7 @@ package com.mkoi.prime;
  * Created by Tomek on 2014-03-30.
  */
 public class SelfMath {
-    public long GCD(long a, long b) {
+/*    public long GCD(long a, long b) {
         long tmp;
         while (b != 0) {
             tmp = b;
@@ -36,5 +36,5 @@ public class SelfMath {
             m = m << 1;
         }
         return ret;
-    }
+    }*/
 }
