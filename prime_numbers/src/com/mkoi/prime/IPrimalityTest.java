@@ -14,8 +14,9 @@ public interface IPrimalityTest {
      * Checks that number is probably prime.
      * @param number the number to check.
      * @param repeats the number of iterations of algorithm.
+     * @param enhancedVerbosity if set to true, the logger shows more communicates.
      * @return false when algorithm found a proof that number is not prime
      * true when is probable prime.
      */
-    boolean probablyPrime(BigInteger number, int repeats);
+    boolean probablyPrime(BigInteger number, int repeats, boolean enhancedVerbosity);
 }

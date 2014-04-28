@@ -22,32 +22,32 @@ public class JacobiSymbolTest {
     @Test
     public void testResolve2Over() throws Exception {
         JacobiSymbol jacobiSymbol = new JacobiSymbol(new BigInteger("2"), new BigInteger("17"), null);
-        Assert.assertEquals("2 over 17 != 1", jacobiSymbol.resolve(), 1);
+        Assert.assertEquals("2 over 17 != 1", jacobiSymbol.resolve(true), 1);
 
         jacobiSymbol = new JacobiSymbol(new BigInteger("2"), new BigInteger("23"), null);
-        Assert.assertEquals("2 over 23 != 1", jacobiSymbol.resolve(), 1);
+        Assert.assertEquals("2 over 23 != 1", jacobiSymbol.resolve(true), 1);
 
         jacobiSymbol = new JacobiSymbol(new BigInteger("2"), new BigInteger("11"), null);
-        Assert.assertEquals("2 over 11 != -1", jacobiSymbol.resolve(), -1);
+        Assert.assertEquals("2 over 11 != -1", jacobiSymbol.resolve(true), -1);
 
         jacobiSymbol = new JacobiSymbol(new BigInteger("2"), new BigInteger("37"), null);
-        Assert.assertEquals("2 over 37 != 1", jacobiSymbol.resolve(), -1);
+        Assert.assertEquals("2 over 37 != 1", jacobiSymbol.resolve(true), -1);
     }
 
     @Test
     public void testResolve() throws Exception {
 
         JacobiSymbol jacobiSymbol = new JacobiSymbol(new BigInteger("1"), new BigInteger("83"), null);
-        Assert.assertEquals("1 over 83 != 1", jacobiSymbol.resolve(), 1);
+        Assert.assertEquals("1 over 83 != 1", jacobiSymbol.resolve(true), 1);
 
         jacobiSymbol = new JacobiSymbol(new BigInteger("12"), new BigInteger("13"), null);
-        Assert.assertEquals("12 over 13 != 1", jacobiSymbol.resolve(), 1);
+        Assert.assertEquals("12 over 13 != 1", jacobiSymbol.resolve(true), 1);
 
         jacobiSymbol = new JacobiSymbol(new BigInteger("18"), new BigInteger("19"), null);
-        Assert.assertEquals("18 over 19 != -1", jacobiSymbol.resolve(), -1);
+        Assert.assertEquals("18 over 19 != -1", jacobiSymbol.resolve(true), -1);
 
         jacobiSymbol = new JacobiSymbol(new BigInteger("6"), new BigInteger("15"), null);
-        Assert.assertEquals("6 over 15 != 0", jacobiSymbol.resolve(), 0);
+        Assert.assertEquals("6 over 15 != 0", jacobiSymbol.resolve(true), 0);
 
     }
 }

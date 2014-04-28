@@ -12,7 +12,7 @@ public class PrimeNumbers {
     /**
      * Startup method
      */
-    public static void main() {
+    public static void main(String[] args) {
         MainApi api = new MainApi();
     }
 }

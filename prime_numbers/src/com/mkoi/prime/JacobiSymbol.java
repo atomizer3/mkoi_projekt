@@ -50,11 +50,12 @@ public class JacobiSymbol {
     /**
      * Resolve value of this Jacobi Symbol. It uses recursion for calculating result,
      * based of the law of quadratic reciprocity for Jacobi Symbols.
+     * @param enhancedVerbosity if set to true, the logger shows more communicates.
      * @return 1 iff upper is quadratic residue mod lower,
      * -1 iff upper is not quadratic residue mod lower,
      * 0 when gcd(upper, lower) > 1.
      */
-    public int resolve() {
+    public int resolve(boolean enhancedVerbosity) {
         if (upper.equals(BigInteger.ZERO))
             return 0;
         if (upper.equals(BigInteger.ONE))
@@ -68,15 +69,15 @@ public class JacobiSymbol {
         int third = resolveSign(oddDivisor);
 
         if (oddDivisor.equals(BigInteger.ONE)) {
-            if (this.logger != null) {
+            if (this.logger != null && enhancedVerbosity) {
                 this.logger.log(String.format("%s over %s = %d", upper.toString(), lower.toString(), first * third));
             }
             return first * third;
         }
 
-        int second = new JacobiSymbol(lower.mod(oddDivisor), oddDivisor, logger).resolve();
+        int second = new JacobiSymbol(lower.mod(oddDivisor), oddDivisor, logger).resolve(enhancedVerbosity);
 
-        if (this.logger != null) {
+        if (this.logger != null && enhancedVerbosity) {
             this.logger.log(String.format("%s over %s = %d", upper.toString(), lower.toString(), first * second * third));
         }
         return first * second * third;

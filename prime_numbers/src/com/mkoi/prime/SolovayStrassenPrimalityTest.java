@@ -28,23 +28,25 @@ public class SolovayStrassenPrimalityTest implements IPrimalityTest{
      * Checks that number is probably prime.
      * @param number the number to check.
      * @param repeats the number of iterations of algorithm.
+     * @param enhancedVerbosity if set to true, the logger shows more communicates.
      * @return false when algorithm found a proof that number is not prime
      * true when is probable prime.
      */
     @Override
-    public boolean probablyPrime(BigInteger number, int repeats) {
+    public boolean probablyPrime(BigInteger number, int repeats, boolean enhancedVerbosity) {
         if( number.equals(new BigInteger("2") ))
             return true;
 
         for (int i = 0; i < repeats; ++i) {
-            if (logger != null) {
+            if (logger != null && enhancedVerbosity) {
+                logger.setStepName(String.format("Solovay-Strassen (%d):", i));
                 logger.log(String.format("Round %d started...", i));
             }
 
             BigInteger base = randomNumberService.generateRandomNumberFromRange(number);
 
             JacobiSymbol jacobiSymbol = new JacobiSymbol(base, number, logger);
-            int right = jacobiSymbol.resolve();
+            int right = jacobiSymbol.resolve(enhancedVerbosity);
             BigInteger left = base.modPow(number.subtract(BigInteger.ONE).divide(new BigInteger("2")), number);
             BigInteger bigRight = number.add(new BigInteger(Integer.toString(right))).mod(number);
 

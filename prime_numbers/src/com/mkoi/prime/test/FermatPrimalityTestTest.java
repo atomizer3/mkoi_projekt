@@ -36,26 +36,26 @@ public class FermatPrimalityTestTest {
     @org.junit.Test
     public void testProbablyPrime() throws Exception {
 
-        Assert.assertTrue("Testing 2 is prime", fermatPrimalityTestTest.probablyPrime(new BigInteger("2"), 20));
+        Assert.assertTrue("Testing 2 is prime", fermatPrimalityTestTest.probablyPrime(new BigInteger("2"), 20, true));
 
-        Assert.assertTrue("Testing 3 is prime", fermatPrimalityTestTest.probablyPrime(new BigInteger("3"), 20));
+        Assert.assertTrue("Testing 3 is prime", fermatPrimalityTestTest.probablyPrime(new BigInteger("3"), 20, true));
 
-        Assert.assertTrue("Testing 12 is not prime", !fermatPrimalityTestTest.probablyPrime(new BigInteger("12"), 20));
+        Assert.assertTrue("Testing 12 is not prime", !fermatPrimalityTestTest.probablyPrime(new BigInteger("12"), 20, true));
 
-        Assert.assertTrue("Testing 123 is not prime", !fermatPrimalityTestTest.probablyPrime(new BigInteger("123"), 20));
+        Assert.assertTrue("Testing 123 is not prime", !fermatPrimalityTestTest.probablyPrime(new BigInteger("123"), 20, true));
 
-        Assert.assertTrue("Testing 123 is not prime", !fermatPrimalityTestTest.probablyPrime(new BigInteger("123"), 20));
+        Assert.assertTrue("Testing 123 is not prime", !fermatPrimalityTestTest.probablyPrime(new BigInteger("123"), 20, true));
 
-        Assert.assertTrue("Testing 131 is prime", fermatPrimalityTestTest.probablyPrime(new BigInteger("131"), 20));
+        Assert.assertTrue("Testing 131 is prime", fermatPrimalityTestTest.probablyPrime(new BigInteger("131"), 20, true));
 
-        Assert.assertTrue("Testing 393050634124102232869567034555427371542904833 is prime", fermatPrimalityTestTest.probablyPrime(new BigInteger("393050634124102232869567034555427371542904833"), 20));
+        Assert.assertTrue("Testing 393050634124102232869567034555427371542904833 is prime", fermatPrimalityTestTest.probablyPrime(new BigInteger("393050634124102232869567034555427371542904833"), 20, true));
 
-        Assert.assertTrue("Testing 170141183460469231731687303715884105727 is prime", fermatPrimalityTestTest.probablyPrime(new BigInteger("170141183460469231731687303715884105727"), 20));
+        Assert.assertTrue("Testing 170141183460469231731687303715884105727 is prime", fermatPrimalityTestTest.probablyPrime(new BigInteger("170141183460469231731687303715884105727"), 20, true));
 
-        Assert.assertTrue("Testing 65537 is prime", fermatPrimalityTestTest.probablyPrime(new BigInteger("65537"), 20));
+        Assert.assertTrue("Testing 65537 is prime", fermatPrimalityTestTest.probablyPrime(new BigInteger("65537"), 20, true));
 
         //Carmichael's numbers
 
-        Assert.assertTrue("Testing 8911 is Carmichael's number", !fermatPrimalityTestTest.probablyPrime(new BigInteger("8911 "), 20));
+        Assert.assertTrue("Testing 8911 is Carmichael's number", !fermatPrimalityTestTest.probablyPrime(new BigInteger("8911 "), 20, true));
     }
 }
